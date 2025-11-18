@@ -1084,7 +1084,7 @@ void runRace(const Driver &playerDriver, const string &playerName, const Track &
     cout << "│          " << track.name;
     for (int i = 0; i < 21 - track.name.length(); ++i)
         cout << " ";
-    cout << "         │\n";
+    cout << "           │\n";
     cout << "├──────────────────────────────────────────┤\n";
     cout << "│                                          │\n";
 
@@ -1122,7 +1122,7 @@ void runRace(const Driver &playerDriver, const string &playerName, const Track &
     }
 
     cout << "│                                          │\n";
-    printf("│    🏅 Fastest Lap: %-12s (%-8s)   │\n", formatTime(fastestLapTime).c_str(), fastestLapHolder.substr(0, 8).c_str());
+    printf("│    🏅 Fastest Lap: %-12s (%-8s)    │\n", formatTime(fastestLapTime).c_str(), fastestLapHolder.substr(0, 8).c_str());
     printf("│    🛞 Your Pit Stops: %-2d                 │\n", field[playerIndex].pitStops);
     printf("│    📈 Position: P%d → P%-2d                 │\n", field[playerIndex].startingPos, field[playerIndex].currentPos);
     cout << "│                                          │\n";
@@ -1183,3 +1183,4 @@ int main()
     return 0;
 
 }
+
