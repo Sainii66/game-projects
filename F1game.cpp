@@ -754,10 +754,8 @@ void runRace(const Driver &playerDriver, const string &playerName, const Track &
     cout << "│\n";
     cout << "├─────────────────────────────────────┤\n";
     cout << "│                                     │\n";
-    cout << track.asciiMap << "\n";
-    cout << "│                                     │\n";
-    cout << "│  Length: " << track.baseLapSec / 10.0 << "km | Laps: 25          │\n";
-    cout << "│  Difficulty: " << track.difficulty << "/10 | Pit: " << track.pitStopTime << "s    │\n";
+    cout << "│        GRID FORMATION               │\n";
+    cout << "│        Starting positions...        │\n";
     cout << "│                                     │\n";
     cout << "└─────────────────────────────────────┘\n";
     cout << "Grid is forming...\n";
@@ -1183,4 +1181,5 @@ int main()
 
     cout << "Thanks for playing F1 Terminal Racer! 🏁\n";
     return 0;
+
 }
